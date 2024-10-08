@@ -1,0 +1,34 @@
+:root{
+    --fonte: 'Poppins', sans-serif;
+    --fina: 200;
+    --grossa: 600;
+    --preto-fonte: #141414;
+    --cinza-claro: #f5f5f5;
+    --cor-logo: #e0e0e0;
+    --cinza-escuro: #525252;
+}
+
+body{
+    font-family: var(--fonte);
+    color: var(--preto-fonte);
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+.logo{
+    font-size: 64px;
+    font-weight: 700;
+    color: var(--cor-logo);
+}
+
+.subtitulo {
+    font-weight: 900;
+    font-size: 8rem;
+    word-break: break-all;
+    line-height: 1;
+    text-transform: uppercase;
+    max-width: 4ch;
+}
