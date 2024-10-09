@@ -1,6 +1,6 @@
 :root{
     --fonte: 'Poppins', sans-serif;
-    --fina: 200;
+    --fina: 400;
     --grossa: 600;
     --preto-fonte: #141414;
     --cinza-claro: #f5f5f5;
@@ -31,4 +31,11 @@ img {
     line-height: 1;
     text-transform: uppercase;
     max-width: 4ch;
+}
+
+@media (max-width: 800px){
+    .subtitulo {
+        font-size: 3rem;
+        max-width: initial;
+    }
 }
