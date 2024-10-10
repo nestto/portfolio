@@ -36,10 +36,10 @@
 }
 
 .faculdade-lista {
-    padding-left: 8px;
-    border-radius: 4px;
     display: flex;
     flex-wrap: wrap;
+    padding-left: 8px;
+    border-radius: 4px;
     gap: 10px;
     margin-bottom: 3.6rem;
 }
@@ -120,17 +120,28 @@
 .formacao-extra li {
     font-size: 0.95rem;
     margin-bottom: 15px;
+    position: relative;
 }
 
 .formacao-extra span {
-    color: #a3a3a3;
-    font-weight: 500;
+    color: #8f8f8f;
+    font-weight: 200;
 }
 
 .cursos li {
+    font-size: 0.9rem;
     display: flex;
+    flex-wrap: no-wrap;
     justify-content: space-between;
 }
+
+.idiomas li {
+    font-size: 0.9rem;
+    display: flex;
+    flex-wrap: no-wrap;
+    justify-content: space-between;
+}
+
 
 
 @media (max-width: 800px){
@@ -148,5 +159,10 @@
 
     .formacao-texto {
         font-size: 1rem;
+    }
+
+    .formacao-extra h3::before {
+        position: initial;
+        margin-bottom: 10px;
     }
 }
