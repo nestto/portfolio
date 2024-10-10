@@ -1,17 +1,24 @@
 .experiencia {
     max-width: 1200px;
-    padding: 30px 30px;
+    padding: 80px 30px;
     margin: 0 auto;
     display: grid;
     grid-template-columns: 1fr 2fr;
     gap: 100px;
 }
 
-.experiencia .subtitulo {
+.subtitulo-experiencia {
     color: var(--cor-logo);
+    font-weight: 900;
+    font-size: 8rem;
+    word-break: break-all;
+    line-height: 1;
+    text-transform: uppercase;
+    max-width: 4ch;
 }
 
 .experiencia-texto {
+    font-weight: 400;
     font-size: 1.5rem;
     line-height: 1.2;
     margin-bottom: 3.6rem;
@@ -38,8 +45,7 @@
     display: block;
     width: 5px;
     height: 20px;
-    background: linear-gradient(#0dff00, #00fff2);
-    position: absolute;
+    background: linear-gradient(#0084ff, #00fff2);    position: absolute;
     top: 30px;
     left: -5px;
     border-radius: 3px;
@@ -69,7 +75,6 @@
 .empresa-descricao {
     font-size: 0.9rem;
     line-height: 1.1;
-    font-weight: var(--fina);
     color: var(--cinza-escuro);
 }
 
@@ -90,6 +95,12 @@
 }
 
 @media (max-width: 800px){
+
+    .subtitulo-experiencia {
+        font-size: 3rem;
+        max-width: initial;
+    }
+
     .experiencia{
         grid-template-columns: 1fr;
         gap: 40px;
